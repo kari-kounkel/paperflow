@@ -178,7 +178,7 @@ export default function App({ session }) {
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <a href="https://peopleflow.caresmn.com" target="_blank" rel="noreferrer"
+          <a href="https://hr.caresmn.com" target="_blank" rel="noreferrer"
             style={{ fontSize: 12, color: C.g, textDecoration: 'none', fontFamily: mono }}>← PeopleFlow</a>
           <span style={{ fontSize: 11, color: C.gDark, fontFamily: mono }}>{session.user.email}</span>
           <Btn small ghost onClick={logout}>Sign Out</Btn>
