@@ -19,7 +19,7 @@ function Root() {
     return () => subscription.unsubscribe()
   }, [])
 
-  if (loading) return <div style={{ minHeight: '100vh', background: '#0a0e17', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#f0b429', fontFamily: "'DM Sans', sans-serif" }}>Loading...</div>
+  if (loading) return <div style={{ minHeight: '100vh', background: '#140E09', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#D4943A', fontFamily: "'DM Sans', sans-serif" }}>Loading...</div>
 
   return session ? <App session={session} /> : <Auth />
 }

@@ -3,11 +3,11 @@ import { supabase } from './supabase'
 
 // ── Theme ──
 const C = {
-  bg: '#0a0e17', card: '#111827', cardHover: '#1a2235', gold: '#f0b429',
-  goldDim: 'rgba(240,180,41,0.12)', w: '#f1f5f9', g: '#94a3b8', gDark: '#64748b',
-  border: 'rgba(255,255,255,0.06)', red: '#ef4444', green: '#34d399',
-  greenDim: 'rgba(52,211,153,0.12)', blueDim: 'rgba(96,165,250,0.12)', blue: '#60a5fa',
-  purpleDim: 'rgba(167,139,250,0.12)', purple: '#a78bfa'
+  bg: '#140E09', card: '#1E1510', cardHover: '#2A1F17', gold: '#D4943A',
+  goldDim: 'rgba(212,148,58,0.18)', w: '#E8D5B5', g: '#9C8B78', gDark: '#6B5D4F',
+  border: 'rgba(232,213,181,0.08)', red: '#B84233', green: '#7BA67A',
+  greenDim: 'rgba(123,166,122,0.15)', blueDim: 'rgba(107,158,175,0.12)', blue: '#6B9EAF',
+  purpleDim: 'rgba(156,139,120,0.15)', purple: '#9C8B78'
 }
 
 const mono = "'DM Mono', monospace"
@@ -18,7 +18,7 @@ const Btn = ({ children, onClick, gold, ghost, small, disabled, style = {} }) =>
   <button onClick={onClick} disabled={disabled} style={{
     padding: small ? '4px 10px' : '8px 16px',
     background: gold ? C.gold : ghost ? 'transparent' : C.cardHover,
-    color: gold ? '#000' : C.w, border: ghost ? `1px solid ${C.border}` : 'none',
+    color: gold ? '#140E09' : C.w, border: ghost ? `1px solid ${C.border}` : 'none',
     borderRadius: 8, cursor: disabled ? 'not-allowed' : 'pointer',
     fontWeight: 600, fontSize: small ? 11 : 13, fontFamily: sans,
     opacity: disabled ? 0.5 : 1, ...style

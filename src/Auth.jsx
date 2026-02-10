@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { supabase } from './supabase'
 
 const C = {
-  bg: '#0a0e17', card: '#111827', gold: '#f0b429', goldDim: 'rgba(240,180,41,0.12)',
-  w: '#f1f5f9', g: '#94a3b8', border: 'rgba(255,255,255,0.06)', red: '#ef4444', green: '#34d399'
+  bg: '#140E09', card: '#1E1510', gold: '#D4943A', goldDim: 'rgba(212,148,58,0.18)',
+  w: '#E8D5B5', g: '#9C8B78', border: 'rgba(232,213,181,0.08)', red: '#B84233', green: '#7BA67A'
 }
 
 export default function Auth({ onLogin }) {
@@ -38,7 +38,7 @@ export default function Auth({ onLogin }) {
           style={{ width: '100%', padding: '10px 14px', marginBottom: 16, background: C.bg, border: `1px solid ${C.border}`, borderRadius: 8, color: C.w, fontSize: 14, outline: 'none', boxSizing: 'border-box' }} />
         {err && <p style={{ color: err.includes('Check') ? C.green : C.red, fontSize: 12, marginBottom: 10 }}>{err}</p>}
         <button type="submit" disabled={loading}
-          style={{ width: '100%', padding: '12px 0', background: C.gold, color: '#000', fontWeight: 700, fontSize: 14, border: 'none', borderRadius: 8, cursor: 'pointer', marginBottom: 10 }}>
+          style={{ width: '100%', padding: '12px 0', background: C.gold, color: '#140E09', fontWeight: 700, fontSize: 14, border: 'none', borderRadius: 8, cursor: 'pointer', marginBottom: 10 }}>
           {loading ? '...' : mode === 'login' ? 'Sign In' : 'Create Account'}
         </button>
         <p onClick={() => setMode(mode === 'login' ? 'signup' : 'login')}
